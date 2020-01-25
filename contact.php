@@ -6,7 +6,7 @@ session_start();
 $msg_name="";$msg_contact="";$msg_email="";$msg_content="";$msg_success="";
 $name="";$contact="";$email="";$content="";$msg_date="";$msg_time="";
 if(isset($_POST['submit'])){
-  //mysql_real_escape_string() Use to prevent sql Injection
+  //mysql_real_escape_string() Use to prevent sql Injections
   //Field variables
 $name=mysqli_real_escape_string($conn, $_POST['name']);
 
@@ -23,7 +23,7 @@ $msg_time=date("h:i:sa");
 
 //echo $name."<br>" .$contact. "<br>" .$email. "<br>" .$content. "<br>" .$msg_date. "<br>" .$msg_time;
 
-//Field Validation codes
+//Field Validations codes
 if(empty($name)){
   $msg_name="<div class='error'>Please enter Your Name</div>";
 }
