@@ -41,6 +41,8 @@ $sum = $row['value_sum'];
     $user_role=$retrieve['user_role']
 
  ?>
+
+
  <!DOCTYPE html>
 <html>
 <head>
@@ -164,6 +166,18 @@ $sum = $row['value_sum'];
 
     <div class="container-fluid" style="margin-bottom:100px; margin-top:40px;">
         <div class="table-responsive">
+
+            <form action="search_results.php" method="get">
+                <label for="">Search By Name</label>
+                <div class="input-group">
+                <input type="search" name="search">
+               <div class="input-group-append">
+                  <span class="input-group-text"> <button type="submit" name="find"><i class="fas fa-search" style="color: blue;"></i></button></span>
+               </div>
+
+           </div>
+            </form>
+
             <table id="example" class="display nowrap" style="width:100%">
                 <thead>
                     <tr>
@@ -173,7 +187,6 @@ $sum = $row['value_sum'];
                                     <th>Middle Name</th>
                                     <th>Last Name</th>
                                     <th>Amount</th>
-                                    
                                     <th>View</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
