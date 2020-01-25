@@ -14,11 +14,11 @@ $search = ucwords(strtolower($search));
 
 
 
-$sql = "SELECT welfare.paydate,members.fname,members.mname,members.lname,welfare.amount 
-FROM welfare INNER JOIN members ON welfare.member_id=members.id WHERE members.fname='$search' OR 
-members.mname='$search' OR members.lname='$search' ORDER BY welfare.paydate DESC";
+//$sql = "SELECT welfare.paydate,members.fname,members.mname,members.lname,welfare.amount 
+//FROM welfare INNER JOIN members ON welfare.member_id=members.id WHERE members.fname='$search' OR 
+//members.mname='$search' OR members.lname='$search' ORDER BY welfare.paydate DESC";
 
-$results = mysqli_query($conn, $sql);
+//$results = mysqli_query($conn, $sql);
 
 ?>
 
